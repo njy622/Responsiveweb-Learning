@@ -1,0 +1,95 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 3px #000;
+    z-index: 20;
+}
+
+.header_wrapper {
+    display: flex; /* flex로 지정되어있으면 일차원적 정렬이 된다(가로로) */
+    align-items: center; /* 교차축인 세로축에서 가운데 정렬 */
+    justify-content: space-between; /* 교차축인 가로축에서 양쪽정렬*/
+    height: 60px;
+    padding: 0 16px; /* 위아래로는 0, 양옆으로 16px 여백 */
+}
+
+.header_start{
+    height: 40px; /* 요소 높이 */
+    line-height: 40px; /* 줄높이 */
+}
+
+.header_hamburger{
+    border: none;
+    background-color: transparent;  /* 투명색 */
+    font-size: 1.5rem;
+}
+
+.header_title{
+    font-size: 1.2rem;
+    margin-left: 6px;
+}
+
+.header_center{  /* 검색창 */
+    width: 50%;
+}
+
+.header_form{
+    display: flex; /* 인풋창과 버튼을 붙이기 위해 넣음 */
+    max-width: 100%;
+}
+
+.header_input-text{
+    width: calc(100% - 60px);   /*버튼크기를 제외하고 차지*/
+    height: 40px;
+    padding: 0 6px;
+    border: 1px solid #8f8f8f;
+    border-right: none;     /* 오른쪽 보더 없앰 */
+    border-radius: 2px 0 0 2px;
+}
+
+.header_input-button{
+    width: 60px;
+    height: 40px;
+    border: 1px solid #8f8f8f;
+    border-left: none;  /* 왼쪽 보더 없앰 */
+    border-radius: 0 2px 2px 0;
+}
+
+.header_end{
+    display: flex;
+}
+.header_search{
+    display: none;
+    margin-right: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+.header_profile{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    background-color: tomato;
+    background-image: url('../images/profile.jpg');
+    background-size: 41px 41px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .header_title{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header_center{
+        display: none;
+    }
+    .header_search{
+        display: block; /* block이라도 header_end는 flex 지정했기때문에 일차원으로 유지함 */
+    }
+}
