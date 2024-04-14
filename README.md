@@ -3,7 +3,6 @@
 - 유튜브로 독학하는 반응형웹
 - 참고한 유튜브 : https://www.youtube.com/watch?v=yRyphOqSFKo&list=PLFeNz2ojQZjvPhBMUy3-641YBOOyLrXYS
 
-  [![Video Label]([http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://www.youtube.com/watch?v=yRyphOqSFKo&list=PLFeNz2ojQZjvPhBMUy3-641YBOOyLrXYS)
 
 
 ### 화면너비 : 일반 데스크탑
